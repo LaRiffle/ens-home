@@ -1,0 +1,316 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Théo Ryffel</title>
+  </head>
+  <style>
+      .container {
+          padding-top: 10px;
+      }
+      .profile-picture {
+          width: 200px;
+          height: 200px;
+          border-radius: 100px;
+          padding: 7px;
+          overflow: hidden;
+          border: 1px gray solid;
+          background-color: white;
+          top: 50px;
+          left: 50px;
+          position: absolute;
+      }
+      .profile-picture img {
+          width: 100%;
+          border-radius: 100px;
+      }
+      .profile-title {
+          color: white;
+          top: -50px;
+          left: 30px;
+          position: absolute;
+      }
+      .logos {
+          float: right;
+      }
+      .fa-fake-logo {
+        position: relative;
+        font-size: 1.4rem;
+        bottom: 5px;
+        max-height: 20px;
+      }
+
+      #logo_ens {
+          display: none;
+      }
+
+      @media(max-width:990px){
+          .profile-picture {
+              width: 100px;
+              height: 100px;
+              border-radius: 50px;
+              padding: 3px;
+              top: 25px;
+              left: 25px;
+          }
+      }
+      @media(max-width:767px){
+          .profile-picture {
+              top: 15px;
+          }
+      }
+      @media(max-width:576px){
+          .container {
+              padding: 0px;
+          }
+          .profile-title {
+              left: inherit;
+              right: 30px;
+          }
+          #logo_inria {
+              display: none;
+          }
+      }
+      @media(max-width:450px){
+          .profile-picture {
+              top: 10px;
+              left: 10px;
+          }
+      }
+      @media(max-width:380px){
+          #logo_ens_psl {
+              display: none;
+          }
+          #logo_ens {
+              display: inherit;
+          }
+      }
+  </style>
+  <body>
+
+    <div class="container">
+        <div class="card">
+            <img class="card-img-top" src="https://pbs.twimg.com/profile_banners/430671736/1523100759/1500x500" alt="The presentation cover couldn't load. :/">
+
+            <div class="profile-picture"><img src="https://pbs.twimg.com/profile_images/1101407769872252928/VcGgposB_400x400.png" alt="Profile picture" /></div>
+          <div class="card-body" style="position: relative;">
+              <h3 class="profile-title">Théo Ryffel</h3>
+
+              <div class="logos">
+                  <img class="mr-3" id="logo_ens" src="home_src/logos/ens.png" alt="Generic placeholder image" height="45px" style="position:relative; bottom: 8px;">
+                <img class="mr-3" id="logo_ens_psl" src="home_src/logos/ens_psl.png" alt="Generic placeholder image" height="45px" style="position:relative; bottom: 8px;">
+                  <img class="mr-3" id="logo_inria" src="home_src/logos/inria.png" alt="Generic placeholder image" height="45px" style="position:relative; bottom: 8px;">
+
+              </div>
+              <h4 class="card-title">Hey, welcome!</h4>
+              <hr />
+            <h5 class="card-title">I'm a PhD student at ENS at the crossroads of Machine Learning and Cryptology</h5>
+            <p class="card-text">
+                I'm interested in Privacy-Preserving Machine Learning and have started a PhD at
+                <a href="https://www.ens.fr/">ENS</a> to work on this topic under the supervision of
+                <a href="https://www.di.ens.fr/david.pointcheval/index.php">David Pointcheval</a> and
+                <a href="https://www.di.ens.fr/~fbach/">Francis Bach</a>. I'm also a core contributor of the
+                <a href="https://openmined.org">OpenMined</a> project that builds practical tools for private AI, and a co-founder
+                of <a href="https://arkhn.org">Arkhn</a> which builds concrete solutions for hospitals. I publish regularly
+                about my work and readings on <a href="https://lariffle.github.io/">my blog</a>.
+            </p>
+              <p>
+                <span class="badge badge-secondary">Deep Learning</span>
+                  <span class="badge badge-secondary">Federated Learning</span>
+                <span class="badge badge-secondary">Private AI</span>
+                  <span class="badge badge-secondary">Secure Multi-Party Computation</span>
+                  <span class="badge badge-secondary">Differential Privacy</span>
+                  <span class="badge badge-secondary">Functional Encryption</span>
+            </p>
+              <a href="https://lariffle.github.io/" class="card-link">Go to my blog</a>
+              <a href="https://twitter.com/theoryffel" class="card-link">Twitter</a>
+              <a href="https://github.com/LaRiffle" class="card-link">Github</a>
+              <a href="https://www.linkedin.com/in/theo-ryffel/" class="card-link">Linkedin</a>
+              <a href="https://scholar.google.fr/citations?user=JbSRqs8AAAAJ&hl=fr&oi=ao" class="card-link">Google scholar</a>
+              <a tabindex="0" class="card-link" role="button" data-toggle="popover" data-trigger="focus" data-content="theo.ryffel[at]ens.fr">Contact</a>
+          </div>
+        </div>
+        <hr />
+        <div class="card-deck" style="margin-bottom: 10px;">
+          <div class="card">
+            <div class="card-body">
+                <div class="media">
+                    <div class="mr-3 fa-fake-logo" width="30px">
+                      <i class="fa fa-users"></i>
+                    </div>
+                    <div class="media-body">
+                      <h5 class="card-title" style="margin-bottom:0px">Last talks & events</h5>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush" style="max-height: 320px; overflow: scroll;">
+              <li class="list-group-item">
+                <b>July 9, 2019</b><br />
+                 Talk at <a href="https://project.inria.fr/apvp2019/">APVP 2019</a> on PySyft
+              </li>
+              <li class="list-group-item">
+                <b>June 26, 2019</b><br />
+                 Presentation of OpenMined at <a href="https://www.chuv.ch/fr/chuv-home/">CHUV</a> (Switzerland)
+              </li>
+              <li class="list-group-item">
+                <b>June 19, 2019</b><br />
+                 Talk at <a href="https://www.chuv.ch/fr/chuv-home/">School of Cybersecurity - Université Côte d'Azur</a> on OpenMined
+              </li>
+              <li class="list-group-item">
+                <b>June 17, 2019</b><br />
+                 Presentation of Privacy-Preserving ML techniques at <a href="http://www.limics.fr/">LIMICS</a>
+              </li>
+              <li class="list-group-item">
+                <b>June 6, 2019</b><br />
+                 Presentation "Tools for Safe AI" at <a href="http://www.limics.fr/">Laboratoire de Sciences Cognitives et Psycholinguistiques</a> (BabyCloud team)
+              </li>
+              <li class="list-group-item">
+                <b>Mai 15, 2019</b><br />
+                 Presentation of Federated Learning Techniques at <a href="http://www.di.ens.fr/">ENS Paris</a> (internal)
+              </li>
+              <li class="list-group-item">
+                <b>Mai 14, 2019</b><br />
+                 Talk at <a href="https://www.meetup.com/fr-FR/Paris-OpenMined-Meetup/events/261028321/">Paris Meetup OpenMined</a> on Secure & Federated Learning at Arkhn
+              </li>
+              <li class="list-group-item">
+                <b>April 11, 2019</b><br />
+                 Co-organisation of <a href="https://www.meetup.com/fr-FR/Paris-OpenMined-Meetup/">Paris Meetup OpenMined</a> to federate contributtions on PySyft
+              </li>
+              <li class="list-group-item">
+                <b>March 26, 2019</b><br />
+                 Presentation of Adversarial Training techniques at the ANBLIC meeting
+              </li>
+              <li class="list-group-item">
+                <b>March 20, 2019</b><br />
+                 Talk at <a href="https://www.meetup.com/fr-FR/Paris-OpenMined-Meetup/events/259237708/">Paris Meetup OpenMined</a> to present PySyft
+              </li>
+              <li class="list-group-item">
+                <b>December 8, 2018</b><br />
+                 Talk at Spotlight session <a href="https://ppml-workshop.github.io/ppml/ppml18/">NeurIPS 2018 Workshop on Privacy-Preserving Machine Learning</a> (Canada)
+              </li>
+              <li class="list-group-item">
+                <b>November 27, 2018</b><br />
+                 Presentation of OpenMined at <a href="https://brave.com/research/">Brave</a> (London)
+              </li>
+              <li class="list-group-item">
+                <b>September 14, 2018</b><br />
+                 Master's Degree Defense at <a href="https://www.imperial.ac.uk/">Imperial College London</a> on PySyft (London)
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-body" style="flex: none;">
+                <div class="media">
+                    <div class="mr-3 fa-fake-logo" width="30px">
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="card-title" style="margin-bottom: 0px;">Research</h5>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                 <b><a href="https://arxiv.org/abs/1905.10214">Partially Encrypted Machine Learning using Functional Encryption</a></b><br />
+                 <span class="text-secondary">NeurIPS 2019</span><br />
+                 <em><a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Ryffel%2C+T">Théo Ryffel</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Dufour-Sans%2C+E">Edouard Dufour-Sans</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Gay%2C+R">Romain Gay</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Bach%2C+F">Francis Bach</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Pointcheval%2C+D">David Pointcheval</a></em><br />
+                 <i class="fa fa-1x fa-github" style="font-size:1.2rem;"></i> &nbsp;<a href="https://github.com/LaRiffle/collateral-learning">github.com/LaRiffle/collateral-learning</a>
+              </li>
+              <li class="list-group-item">
+                <b><a href="https://arxiv.org/abs/1811.04017">A Generic Framework for Privacy Preserving Deep Learning</a></b><br />
+                <span class="text-secondary">NeurIPS 2018 Workshop on Privacy-Preserving Machine Learning</span><br />
+                <em><a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Ryffel%2C+T">Théo Ryffel</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Trask%2C+A">Andrew Trask</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Dahl%2C+M">Morten Dahl</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Wagner%2C+B">Bobby Wagner</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Mancuso%2C+J">Jason Mancuso</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Rueckert%2C+D">Daniel Rueckert</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Passerat-Palmbach%2C+J">Jonathan Passerat-Palmbach</a></em><br />
+                <i class="fa fa-1x fa-github" style="font-size:1.2rem;"></i> &nbsp;<a href="https://github.com/OpenMined/PySyft">github.com/OpenMined/PySyft</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <div class="card-deck" style="margin-bottom: 10px;">
+          <div class="card">
+            <div class="card-body" style="max-height: 500px; overflow: scroll;">
+                <div class="media">
+                  <img class="mr-3" src="home_src/logos/twitter.png" alt="Generic placeholder image" width="30px" style="position:relative; bottom: 3px;">
+                  <div class="media-body">
+                    <h5 class="card-title">Twitter</h5>
+                  </div>
+                </div>
+              <p class="card-text">Latest news always are on Twitter</p>
+                <a class="twitter-timeline" href="https://twitter.com/theoryffel?ref_src=twsrc%5Etfw" data-tweet-limit="5">Tweets by theoryffel</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <p class="text-center">
+                  <a href="https://twitter.com/theoryffel" class="btn btn-outline-primary">See Twitter account</a>
+              </p>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+                <div class="media">
+                  <img class="mr-3" src="home_src/logos/github.png" alt="Generic placeholder image" width="30px" style="position:relative; bottom: 3px;">
+                  <div class="media-body">
+                    <h5 class="card-title">Github</h5>
+                  </div>
+                </div>
+              <p class="card-text">Most of my current projects are on Github</p>
+               <div class="github-card" data-github="lariffle" data-width="100%" data-height="" data-theme="medium"></div>
+                <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                <p class="text-center">
+                    <a href="https://github.com/LaRiffle" class="btn btn-outline-primary">See Github account</a>
+                </p>
+            </div>
+          </div>
+            <div class="card">
+            <div class="card-body">
+                <div class="media">
+                  <img class="mr-3" src="home_src/logos/linkedin.png" alt="Generic placeholder image" width="25px">
+                  <div class="media-body">
+                    <h5 class="card-title">Linkedin</h5>
+                  </div>
+                </div>
+              <p class="card-text">More info on my academic background and past experiences is available on Linkedin</p>
+                <p class="text-center">
+              <a href="https://www.linkedin.com/in/theo-ryffel/" class="btn btn-outline-primary">See Linkedin account</a>
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin-bottom: 10px;">
+          <div class="card-body">
+              You can also &nbsp;
+            <a href="https://www.airbnb.fr/rooms/24906822" class="card-link">Book my apartement</a>
+              <a href="https://www.instagram.com/joselyne.ernst/" class="card-link">Discover my Instagram</a>
+              <a href="http://lebonsillon.fr/" class="card-link">Buy vinyls</a>
+          </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- <a class="twitter-timeline" href="https://twitter.com/theoryffel?ref_src=twsrc%5Etfw">Tweets by theoryffel</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+        })
+        $('.popover-dismiss').popover({
+          trigger: 'focus'
+        })
+    </script>
+  </body>
+</html>
