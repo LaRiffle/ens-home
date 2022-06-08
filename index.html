@@ -120,14 +120,14 @@
                 <a href="https://www.di.ens.fr/~fbach/">Francis Bach</a>. I'm also co-founder
                 of <a href="https://arkhn.com">Arkhn</a>, a company that helps hospitals regaining sovereignty
                 over their data. I'm an open-source contributor
-                to the <a href="https://openmined.org">OpenMined</a> community which builds practical tools for private AI like
+                to the <a href="https://openmined.org">OpenMined</a> community which builds practical tools for private ML like
                 <a href="https://github.com/OpenMined/PySyft">PySyft</a>.
             </p>
               <p>
                 <span class="badge badge-secondary">Deep Learning</span>
                   <span class="badge badge-secondary">Federated Learning</span>
-                <span class="badge badge-secondary">Private AI</span>
                   <span class="badge badge-secondary">Secure Multi-Party Computation</span>
+                  <span class="badge badge-secondary">Function Secret Sharing</span>
                   <span class="badge badge-secondary">Differential Privacy</span>
                   <span class="badge badge-secondary">Functional Encryption</span>
             </p>
@@ -143,8 +143,67 @@
         <div class="card">
           <div class="card-body" style="position: relative;">
             <h5 class="card-title">PhD Defense</h5>
+            <h6>Information</h6>
             <p class="card-text">
-                My PhD defense will be held on the 23rd of June 2022.
+                📍 45, rue d'Ulm, 75005, Stair B, 4th floor, Room W<br />
+                📽 A remote link will also be available for those who can't join<br />
+                📅 June 23rd, 2022<br />
+                🕝 2pm<br />
+            </p>
+            <h6>Title</h6>
+            <p class="card-text">
+              Cryptography for Privacy-Preserving Machine Learning
+            </p>
+            <h6>Jury</h6>
+            <p class="card-text">
+              <ul>
+                <li>Aurélien Bellet - INRIA Lille (Rapporteur)</li>
+                <li>Yuval Ishai - Technion (Rapporteur)</li>
+                <li>Renaud Sirdey - CEA (Examinateur)</li>
+                <li>Mariya Georgieva - Inpher (Examinatrice)</li>
+                <li>Laurent Massoulié - INRIA, ENS, PSL (Examinateur)</li>
+                <li>Jonathan Passerat-Palmbach - Imperial College London (Examinateur)</li>
+                <li>David Pointcheval - ENS, CNRS, PSL (Directeur de thèse)</li>
+                <li>Francis Bach - INRIA, ENS, CNRS, PSL (Directeur de thèse)</li>
+              </ul>
+            </p>
+            <h6>Abstract</h6>
+            <p class="card-text">
+              The ever growing use of machine learning (ML), motivated by the possibilities it brings to a large number of sectors, is
+              increasingly raising questions because of the sensitive nature of the data that must be used and the lack of
+              transparency on the way these data are collected, combined or shared. Therefore, a number of methods are being developed
+              to reduce its impact on our privacy and make its use more acceptable, especially in areas such as healthcare where its
+              potential is still largely under-exploited.
+            </p>
+            <p class="card-text">
+              This thesis explores different methods from the fields of cryptography and security, and applies them to machine
+              learning in order to establish new confidentiality guarantees for the data used and the ML models.
+            </p>
+            <p class="card-text">
+              Our first contribution is the development of a technical foundation to facilitate experimentation of new approaches,
+              through an open-source library named PySyft. We propose a modular architecture that allows one to pick the
+              confidentiality blocks necessary for one's study, or to develop and easily integrate new blocks. This library is reused
+              in all the implementations proposed in this thesis.
+            </p>
+            <p class="card-text">
+              Our second contribution consists in highlighting the vulnerability of ML models by proposing an attack that exploits a
+              trained model to reveal confidential attributes of an individual. This attack could, for example, subvert a model that
+              recognizes a person's sport from an image, to detect the person's racial origins. We propose solutions to limit the
+              impact of this attack.
+            </p>
+            <p class="card-text">
+              In a third step, we focus on some cryptographic protocols that allow us to perform computations on encrypted data. A
+              first study proposes a functional encryption protocol that allows to make predictions using a small ML model over
+              encrypted data and to only make the predictions public. A second study focuses on optimizing a functional secret sharing
+              protocol, which allows an ML model to be trained or evaluated on data privately, i.e. without revealing either the model
+              or the data to anyone. This protocol provides sufficient performance to use models that have practical utility in
+              non-trivial tasks such as pathology detection in lung X-rays.
+            </p>
+            <p class="card-text">
+              Our final contribution is in differential privacy, a technique that limits the vulnerability of ML models and thus the
+              exposure of the data used in training by introducing a controlled perturbation. We propose a new protocol and show that
+              it offers the possibility to train a smooth and strongly convex model with a bounded privacy loss regardless of the
+              number of calls to sensitive data during training.
             </p>
           </div>
         </div>
